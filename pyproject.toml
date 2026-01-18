@@ -17,6 +17,9 @@ matplotlib = "^3.10"
 seaborn = "^0.13"
 jupyterlab = "^4.5"
 tqdm = "^4.67"
+google-cloud-bigquery = "^3.38"
+google-cloud-bigquery-storage = "^2.34"
+statsmodels = "^0.14"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

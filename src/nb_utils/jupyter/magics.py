@@ -1,5 +1,5 @@
 from IPython.core.magic import register_cell_magic
-from datalab.bigquery import run_query
+from nb_utils.bigquery import run_query
 
 def register_bq_magic():
     @register_cell_magic

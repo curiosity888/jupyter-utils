@@ -21,13 +21,14 @@ fi
 
 echo "=== Клонируем / обновляем репозиторий ==="
 if [ ! -d ".git" ]; then
-    git clone https://github.com/curiosity888/jupyter-utils.git .
+    git clone https://github.com/curiosity888/jupyter-utils.git
 else
     git pull origin main
 fi
 
 echo "=== Установка зависимостей ==="
-poetry install --no-root   # или --no-root если не хочешь editable
+cd jupyter-utils
+poetry install   # или --no-root если не хочешь editable
 
 # Опционально: editable install, если хочешь редактировать код
 # poetry install
