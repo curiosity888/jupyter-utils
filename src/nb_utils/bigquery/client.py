@@ -33,7 +33,7 @@ def run_query(query):
     # --- ОПРЕДЕЛЕНИЕ API ---
     destination = job.destination
     temp_table = client.get_table(destination)
-    use_storage = temp_table.num_rows >= max_rows
+    use_storage = temp_table.num_rows >= cfg.min_rows_for_storage_api
     if use_storage:
         print(f"🚀 Использую **Storage API** (ожидается {temp_table.num_rows} строк)")
     else:

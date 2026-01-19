@@ -3,6 +3,7 @@ class BigQueryOptions:
         self.project_id: str = "default_project_id"
         self.location: str = "US"
         self.max_bytes_billed_gb: int = 5
+        self.min_rows_for_storage_api = 100000
         self.verbose: bool = True
 
 class NBUtilsOptions:
