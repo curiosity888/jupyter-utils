@@ -2,7 +2,7 @@ from google.cloud import bigquery
 from google.cloud import bigquery_storage
 from tqdm.notebook import tqdm
 import pandas as pd
-from nb_utils import options
+from nb_utils import config
 
 def run_query(query):
     cfg = options.bigquery

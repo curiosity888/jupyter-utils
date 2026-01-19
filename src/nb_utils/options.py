@@ -9,4 +9,4 @@ class NBUtilsOptions:
     def __init__(self):
         self.bigquery = BigQueryOptions()
 
-options = NBUtilsOptions()
+config = NBUtilsOptions()
